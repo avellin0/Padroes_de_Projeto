@@ -24,8 +24,7 @@ class CreatePessoa implements Ipessoa{
 }
 
 const teste = new CreatePessoa()
-console.log(teste.create("Daniel","Baptista",15))
-console.log(teste.create("davi","",1).nome)
+console.log(teste.create("Davi","Avelino",17))
 
 
 
