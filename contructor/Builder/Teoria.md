@@ -14,5 +14,3 @@
 * Permite method chaining (`correr().pular().atirar()`)
 * O objeto final pode variar de acordo com a necessidade 
 
-
-![Diagrama do Builder]("Padroes-de-projeto\contructor\Builder\diagramas\Builder.png")
