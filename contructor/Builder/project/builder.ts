@@ -1,36 +1,40 @@
-interface Ipessoa{
-  nomeCompleto(): string
-}
+import { MainDishBuilder } from "./classes/main-dish-builder";
+import { MealBox } from "./classes/meal-box";
+import { Beans, Beverage, Dessert, Meat, Rice } from "./classes/meals";
+import { VeganDishBuilder } from "./classes/vegan-dish-builder";
+
+//===========  self-service 
+console.log(`\n Self-Service: \n `)
+
+const rice = new Rice('Arroz', 5)
+const beans = new Beans('feijao', 10)
+const meat = new Meat('carne', 20)
+const beverage = new Beverage('bebida', 4)
+const dessert = new Dessert('sorvete', 6)
+
+const mealBox = new MealBox()
+
+mealBox.add(rice,beans,meat,beverage,dessert)
+console.log(mealBox) // alimentos do self-service
+console.log("valor: " + mealBox.getPrice()) // preço do self-service
+
+console.log(`\n Prato Pronto: \n `) // espaço
 
 
+//============ prato pronto
 
-class CreatePessoa implements Ipessoa{
-  private first_name: string
-  private second_name: string
-  private age: number
+const mainDishBuilder = new MainDishBuilder()
+mainDishBuilder.makeMeal().makeBeverage()
 
-  nomeCompleto(): string {
-    return `${this.first_name} ${this.second_name}`
-  }
-  create(name: string , second_name: string, age: number){
-    this.first_name = name
-    this.second_name = second_name
-    this.age = age
-    
-    return {nome: this.nomeCompleto(), idade: this.age}
+console.log(mainDishBuilder.getMeal()) // alimentos do prato
+console.log("valor: "+mainDishBuilder.getPrice()) // preço do prato pronto
 
-  }
+console.log(`\n Prato Vegano: \n `)
 
-}
+//============ Prato Vegano
 
-const teste = new CreatePessoa()
-console.log(teste.create("Davi","Avelino",17))
+const veganDishBuilder = new VeganDishBuilder()
+veganDishBuilder.makeMeal().makeBeverage()
 
-
-
-
-
-
-
-
-
+console.log(veganDishBuilder.getMeal()) // Alimentos do prato
+console.log("valor: "+veganDishBuilder.getPrice()) // Preço do prato Vegano
