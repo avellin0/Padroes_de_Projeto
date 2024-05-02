@@ -17,9 +17,9 @@
 # Aplicabilidade 
 
 * Use o factory method quando não souber com certeza quais os tipos de objetos o seucódigo vai precisar 
- - assim você pode criar novos objetos sem ter que mexer nos que já criou
+  - assim você pode criar novos objetos sem ter que mexer nos que já criou
 * Use o Factory Method para permitir a extensão de suas factories para a criação de novos objetos
- - Isso ajuda a aplicar o Open/Closed Principle
+  - Isso ajuda a aplicar o Open/Closed Principle
 * Use o Factory Method para desacoplar o código que cria, do código que usa as classes (SRP)   
 * Use Factory Method para dar um hook (gancho) às subclasses para permitir que elas decidam a lógica de criação de objetos
 * Use o Factory Method para eliminar duplicações de código na criação de objetos 
