@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "com": " tsx --watch Structural/composite/example/product-composite.ts",
+    "com": " tsx --watch Structural/composite/project/validation-composite.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
