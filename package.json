@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "adapter": "tsx --watch Structural/adapter/project/client-code.ts",
     "com": " tsx --watch Structural/composite/project/validation-composite.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +12,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/validator": "^13.11.10",
     "tsx": "^4.10.3",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "validator": "^13.12.0"
   }
 }
