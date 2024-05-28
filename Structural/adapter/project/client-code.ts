@@ -9,4 +9,4 @@ function ValidaEmail(emailValidator: EmailValidatorProtocol, email: string): voi
     }
 }
 
-ValidaEmail(new EmailValidatorAdapter(), 'DaviAvelino2007@gmail.com')
+ValidaEmail(new EmailValidatorAdapter(), 'piccorovisck@gmail.com')
