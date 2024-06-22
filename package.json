@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "proxy": "tsx --watch Structural/proxy/project/client-code.ts",
     "adapter": "tsx --watch Structural/adapter/project/client-code.ts",
     "com": " tsx --watch Structural/composite/project/validation-composite.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
